@@ -1,1 +1,14 @@
-Readme
+# Ejemplo de animacion psicodelica para ESP32 con matriz 1088AS
+
+Este repositorio contiene un sketch Arduino (`psych1088as.ino`) que genera
+patrones aleatorios para crear un efecto "psicodelico" utilizando una matriz
+LED 1088AS controlada mediante un MAX7219.
+
+Conecta la matriz al ESP32 con los pines definidos en el sketch (puedes
+ajustarlos segun tu hardware) y carga el programa desde el IDE de Arduino o
+Espressif.
+
+El codigo usa la biblioteca **LedControl** para manejar el MAX7219.
+Instalala desde el Administrador de bibliotecas si no la tienes.
+Si la compilacion falla por "avr/pgmspace.h" no encontrado, usa el archivo `avr/pgmspace.h` incluido en este repositorio.
+
